@@ -8,8 +8,6 @@
 
 @-moz-document domain('eadcampus.spo.ifsp.edu.br'){
 	
-
-
 body {
 	background-color: #202020;
 	color: white;
@@ -22,7 +20,7 @@ body {
   }
   
   .breadcrumb {
-	  background-color: #2C2F33;
+	  background-color: #202020;
 	  color: white;
   }
   
@@ -131,26 +129,33 @@ body {
   .path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted {
 	  color: #f9f9f9;
   }
+	
     #region-main-box,.row.justify-content-center,.text-center{
         background-color: #181818;
     }
+	
     .col-12.pt-3.pb-3,.col-md-5{
         background-color: #181818;
     }
+	
     .card-body,#region-main{
         background-color: #202020;
     }
+	
     .bg-white,.dashboard-card{
         background-color: #252729!important;
     }
+	
     .cell.c1.lastcol,.cell.c0,.row,.popover-region-container,.popover-region-footer-container,.hidden,.popover-header,.popover-body,.arrow::after{
         background-color: #404344;
         border-color: #fff0;
         color: #c4c4c4;
     }
+	
     .usertext.mr-1,.summary{
         color: #c4c4c4;
     }
+	
     .navbar-light .navbar-nav .nav-link,.navbar-light .navbar-brand {
         color: #c4c4c4;
     }
@@ -158,43 +163,53 @@ body {
     .d-sm-inline-block,.multiline,.small,.categoryname.text-truncate,#yui_3_17_2_1_1624709115240_30{
         color: #a5a5a5;
     }
+	
     a:link, a:hover, a:visited, a:active, span.flagged-tag a {
         color: #b2b2b2
     }
+	
     .card,.card-body.pr-1.course-info-container {
         background-color: #252729!important;
         color: #a5a5a5!important;
     }
+	
     .btn.btn-secondary,.btn.btn-secondary.btn-lg,.btn.btn-secondary.btn-block.mt-3,#loginbtn,.btn.btn-secondary.btn-block,.bg-gray,.list-group-item,.dropdown-menu,.custom-select,.btn.btn-primary,.a.bg-gray:hover, button.bg-gray:hover, a.bg-gray:focus, button.bg-gray:focus,.form-control,.simplesearchform .btn-submit{
-        background-color: #2b2b2b!important;
+        background-color: #202020!important;
         border-color: #4a4545!important;
         color: #d3d1d1!important;
     }
+	
+    .row.justify-content-md-center, .filemanager, .yui3-datatable-header, .fp-content, .fp-tableview, .border-bottom, .d-flex.flex-column.h-100 {
+        background-color: #202020!important;
+        color: #a5a5a6!important;
+    }
+	
     .breadcrumb>li.breadcrumb-item,.breadcrumb>li.breadcrumb-item>a{
         background-color: #4b4b4b!important;
         color: #b5b5b5!important;
         border-color:#3e3e3e00;
     }
+	
     .breadcrumb>li.breadcrumb-item{
         border-color:#3e3e3e;
     }
+	
     .format-onetopic .onetopic .nav-tabs>li>a{
         border-color:#4b4b4b;
         background-color: #2b2b2b;
     }
+	
     .format-onetopic .onetopic .nav-tabs>.nav-item>a.nav-link.active{
         border-color:#797979;
         background-color: #161616;
     }
+	
     .breadcrumb>li.breadcrumb-item::after{
         border-left-color: #4b4b4b;
         border-top: 14px solid rgba(0, 0, 0, 0);
         border-bottom: 14px solid rgba(0, 0, 0, 0);
     }
-    .row.justify-content-md-center,.filemanager,.yui3-datatable-header,.fp-content,.fp-tableview,.border-bottom,.d-flex.flex-column.h-100{
-        background-color: #313131!important;
-        color: #a5a5a5!important;
-    }
+	
     #page-footer,.navbar,#nav-drawer{
         background-color: #292929!important;
         color: #bdbdbd!important;
@@ -202,28 +217,34 @@ body {
         border-top: #515151;
         border-bottom: #515151;
     }
+	
     .generaltable.generalbox.quizreviewsummary,.cell,.generaltable {
         background-color: #515050!important;
         color: #cdcccc;
     }
+	
     .que .formulation{
         background-color: #383838;
         color: #cdcccc;
     }
+	
     .que.essay .qtype_essay_response.readonly{
         background-color: #606060;
         border: 3px #6a6a6a;
         color: #fff;        
     }
+	
     .que .info,.outcome.clearfix {
         background-color: #343434;
         border: 3px #6a6a6a;
         color: #cdcccc;  
     }
+	
     .calendar_event_course{
         color: #fff;
         background: #000
     }
+	
     .aalink.focus, #page-footer a:not([class]).focus, .arrow_link.focus, a:not([class]).focus, .activityinstance>a.focus, .aalink:focus, #page-footer a:not([class]):focus, .arrow_link:focus, a:not([class]):focus, .activityinstance>a:focus{
         background-color: #343434;
         border: 3px #6a6a6a;
@@ -231,8 +252,78 @@ body {
         outline: .2rem solid rgba(0, 0, 0, .05);
         box-shadow: 0 -0.2rem #4c5258, 0 0.2rem #343a40;
     }
+	
     .btn-secondary:focus, .btn-secondary.focus{
         outline: .2rem solid rgba(0, 0, 0, .05);
         box-shadow: 0 -0.2rem #4c5258, 0 0.2rem #343a40;
     }
-}
+	
+    .cell.c1.lastcol, .cell.c0, .row, .popover-region-container, .popover-region-footer-container, .hidden, .popover-header, .popover-body, .arrow::after {
+        background-color: #181818!important;
+        border-color: #fff0;
+        color: #c4c4c4;
+    }
+	
+    .content-item-container.unread {
+        margin: 0;
+        background-color: #202020;
+    }
+	
+    .btn-outline-secondary:hover {
+        color: #fff;
+        background-color: #393c3e;
+        border-color: #6c757d;
+    }
+	
+    .list-group-item-action:hover, .list-group-item-action:focus {
+        z-index: 1;
+        color: #dadada;
+        text-decoration: none;
+        background-color: #202020;
+    }
+	
+    .block .block-cards .btn.btn-link.btn-icon:hover, .block .block-cards .btn.btn-link.btn-icon:focus {
+        background-color: #202020;
+    } 
+	
+    .page-item.disabled .page-link {
+        color: #6c757d;
+        pointer-events: none;
+        cursor: auto;
+        background-color: #1f1f1f;
+        border-color: #383838;
+    }
+	
+    .page-link {
+        position: relative;
+        display: block;
+        padding: .5rem .75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        color: #0f6fc5;
+        background-color: #1f1f1f;
+        border: 1px solid #383838;
+    }
+	
+    .page-link:hover {
+        z-index: 2;
+        color: #c1c1c1;
+        text-decoration: none;
+        background-color: #1d1d1d;
+        border-color: #636363;
+    }
+	
+    .alert-info {
+        color: #51659e;
+        background-color: #191919;
+        border-color: #b8dce2;
+    }
+	
+    .format-onetopic .onetopic .nav-tabs>.nav-item>a:hover {
+        background-color: #1d1d1d;
+    }
+	
+    .generaltable.generalbox.quizreviewsummary, .cell, .generaltable {
+        background-color: #131313!important;
+        color: #cdcccc;
+    }

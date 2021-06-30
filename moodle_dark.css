@@ -1,4 +1,15 @@
-body {
+
+/* ==UserStyle==
+@name           Empty @name replaces the default template - 6/25/2021, 6:51:54 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain('eadcampus.spo.ifsp.edu.br'){
+	
+  body {
 	background-color: #202020;
 	color: white;
   }

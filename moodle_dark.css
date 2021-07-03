@@ -15,7 +15,6 @@
   .block {
 	  background-color: #2C2F33;
 	  color: white;
-	  border: 0px;
   }
 
   .block_simple_clock .clock{
@@ -27,26 +26,11 @@
   }
 
   .block .header h2 {
-	  display: block;
-	  padding: 3px 15px;
-	  font-weight: 700;
-	  line-height: 20px;
 	  color: #f9f9f9;
-	  /* text-shadow: 0 1px 0 rgba(255,255,255,.5); */
-	  text-transform: uppercase;
-	  font-size: 1.1em;
-	  word-wrap: break-word;
-	  margin: 0;
   }
-  
   .breadcrumb {
 	  background-color: #202020;
 	  color: white;
-  }
-
-  .breadcrumb>li {
-	  display: inline-block;
-	  text-shadow: 0 0px 0 #fff000; 
   }
 
   .breadcrumb>li.breadcrumb-item,.breadcrumb>li.breadcrumb-item>a {
@@ -63,11 +47,6 @@
       border-left-color: #4b4b4b;
       border-top: 14px solid rgba(0, 0, 0, 0);
       border-bottom: 14px solid rgba(0, 0, 0, 0);
-  }
-  
-  #box_block_float .block{
-	  height:auto;
-	  width: 500px;
   }
   
   
@@ -182,8 +161,8 @@
       color: #c4c4c4;
   }
     
-  .d-sm-inline-block,.multiline,.small,.categoryname.text-truncate,#yui_3_17_2_1_1624709115240_30{
-      color: #a5a5a5;
+  .d-sm-inline-block,.multiline,.small,.categoryname.text-truncate,#yui_3_17_2_1_1624709115240_30{ /*Deixando a fonte dos cartões de curso mais clara - Caio*/
+      color: #cbcbcb;
   }   
 	
   .row.justify-content-md-center, .filemanager, .yui3-datatable-header, .fp-content, .fp-tableview, .border-bottom, .d-flex.flex-column.h-100 {
@@ -251,7 +230,6 @@
   }
 	
   .content-item-container.unread {
-      margin: 0;
       background-color: #202020;
   }
 	
@@ -262,9 +240,7 @@
   }
 	
   .list-group-item-action:hover, .list-group-item-action:focus {
-      z-index: 1;
       color: #dadada;
-      text-decoration: none;
       background-color: #202020;
   }
 	
@@ -327,20 +303,15 @@
   }
     
   .modal-content {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      pointer-events: auto;
       background-color: #1d1d1d;
-      background-clip: padding-box;
       border: 1px solid rgba(0,0,0,.2);
-      outline: 0;
   }
 
+  .message-app .message.received .tail{ /*Alterando a cor da "caudinha" da mensagem recebida  - Caio*/
+      border-bottom-color: #131313!important;
+  }
+    
   .table {
-      width: 100%;
-      margin-bottom: 1rem;
       color: #b2b2b2;
   }
 
@@ -358,10 +329,6 @@
   }
 
   .close {
-      float: right;
-      font-size: 1.40625rem;
-      font-weight: 700;
-      line-height: 1;
       color: #fff;
       text-shadow: 0 1px 0 #fff;
       opacity: .5;
@@ -373,13 +340,10 @@
   }
 
   .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd {
-      display: flex;
-      padding: 1rem 1rem;
       border-bottom: 1px solid #151515;
   }
 
   .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd h1 {
-      font-size: 1.5rem;
       color: white;
   }
 
@@ -403,31 +367,48 @@
       background-image: -o-linear-gradient(transparent 40%,rgba(0,0,0,0.21));
       background-image: linear-gradient(transparent 40%,rgba(0,0,0,0.21));
       color: #000;
-      font-weight: normal;
-      text-align: left;
       text-shadow: 0 1px 1px #202020;
-      vertical-align: bottom;
-      white-space: nowrap;
   }
 
   .border {
       border: 1px solid #464646!important;
   }
 
-  .bg-light {
+  .bg-light,.message-app .body-container { /*Alterando a cor do fundo do app de mensagen - Caios*/
       background-color: #202020!important;
+  }
+  .message-app .message.received{ /*Alterando a cor de fundo e cor de texto das mensagens recebidas - Caio*/
+      background-color: #131313!important;
+      color: #cdcccc;
+  }
+  .message-app .message.send{ /*Alterando a cor de fundo e cor de texto das mensagens enviadas - Caio*/
+      background-color: #494848!important;
+      color: #cdcccc;
+  }
+  .message-app .message.send .tail{ /*Alterando a cor da "caudinha" das mensagens enviadas - Caio*/
+      border-bottom-color: #494848!important;
+  }
+  .message-app .message.received .time,.message-app .message.send .time { /*Alterando a cor de texto do horário de envio da mensagem - Caio*/
+      color: #f5f5f5
+  }
+  .specificfeedback { /*Alterando a cor de feedback específico na revisão de uma atividade - Caio*/
+      background-color: #171717!important;  
+  }
+  .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd{ /*Mudando a cor da fonte da mensagem de erro - Caio*/
+      color: #f5f5f5;
+      background-color: #171717;
+      background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgba(38, 71, 160, 0)), color-stop(0.07, rgba(38, 71, 160, 0)), color-stop(0.5, rgba(61, 103, 206, 0)), to(rgba(66, 111, 217, 0)));;
   }
 
 /* Esses h5 e h6 eu n tenho certeza, mas pode ter mudado todos os textos com parametro h5 e h6 do dominio ;-; | no caso eu estava visando mudar somente a tela de login */
 
   h5, .h5 {
-      font-size: 1.171875rem;
       color: #d3d1d1!important;
   }
 
   h6, .h6 {
-      font-size: .9375rem;
-      color: #a7a7a7!important;
+      color: #d4d3d3!important;
   }
+  
 
 }

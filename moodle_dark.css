@@ -57,8 +57,8 @@ body {
 	  background-color:  #252729!important;
   }
   
-  a:link, a:hover, a:visited, a:active, span.flagged-tag a {
-	  color: #dedede;
+  a:link, a:hover, a:visited, a:active, span.flagged-tag a { /*Links clicáveis clareados, para melhor visualização - Caio*/
+	  color: #f5f5f5;
   }
   
   .path-grade-report-user .user-grade.generaltable .levelodd {
@@ -158,6 +158,7 @@ body {
   }
 	
   .navbar-light .navbar-nav .nav-link,.navbar-light .navbar-brand {
+      transition: 0.3s;
       color: #c4c4c4;
   }
     
@@ -448,5 +449,12 @@ body {
 
   .filepicker-filelist .dndupload-target, .filemanager-container .dndupload-target { /* Alterando a cor do bloco de envio de atividades quando é arrastado do computador "Drag and Drop" - Gustavo */
       background: #181818;
+  }
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active { /* Alterando a cor de hover do header, e adicionando um efeito de transição - Caio*/
+      transition: 0.3s;
+      color: #b70707;
+  }
+  .btn:hover {
+    color: #b70707!important;
   }
 }

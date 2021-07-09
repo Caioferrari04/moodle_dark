@@ -7,7 +7,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("eadcampus.spo.ifsp.edu.br") {
-  body {
+body {
 	background-color: #202020;
 	color: white;
   }
@@ -410,5 +410,43 @@
       color: #d4d3d3!important;
   }
   
+  span[data-flexitour="container"][x-placement="bottom"] div[data-role="arrow"]:after, span[data-flexitour="container"][x-placement="bottom-start"] div[data-role="arrow"]:after { /* Alterando a seta virada para cima do bloco do tour do usuario - Gustavo */
+      border-bottom-color: #1d1d1d;
+  }
 
+  span[data-flexitour="container"][x-placement="top"] div[data-role="arrow"]:after, span[data-flexitour="container"][x-placement="top-start"] div[data-role="arrow"]:after { /* Alterando a seta virada para baixo do bloco do tour do usuario - Gustavo */
+      border-top-color: #1d1d1d;
+  }
+
+   body div[data-flexitour="step-background-fader"], body div[data-flexitour="step-background"] { /* Alterando a cor dos blocos destacados no tour do usuário - Gustavo */
+      background-color: #1f1f1f!important;
+  }
+
+  .btn-light { /* Alterando a cor do botão de "ir para o topo da página" - Gustavo */
+      color: #212529;
+      background-color: #101010;
+      border-color: #202020;
+  }
+
+  .btn:hover { /* Alterando a cor do hover do botão de mensagem no perfil do usuário" - Gustavo */
+      color: #a5a5a5;
+      text-decoration: none;
+  }
+
+  .TabbedPanelsContent { /* Alterando a cor de uma tabela presente no tópico "Aprenda Moodle" na aba "Professores" - Gustavo */
+      background-color: #202020;
+  }
+
+  .block .block-cards .course-summaryitem { /* Alterando a cor do tipo de visualização "summary" nos blocos dos cursos - Gustavo */
+      border: 1px solid #171717;
+      background-color: #252729;
+  }
+
+  .filepicker-filelist.dndupload-over .dndupload-target, .filemanager-container.dndupload-over .dndupload-target { /* Alterando a cor do bloco de envio de atividades quando é arrastado do computador "Drag and Drop" - Gustavo */
+      background: #181818;
+  }
+
+  .filepicker-filelist .dndupload-target, .filemanager-container .dndupload-target { /* Alterando a cor do bloco de envio de atividades quando é arrastado do computador "Drag and Drop" - Gustavo */
+      background: #181818;
+  }
 }

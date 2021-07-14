@@ -23,9 +23,20 @@
     }
     
     /*Elementos de fundo*/
+    [data-region="drawer"] { /*Cor do background da lista presente no drawer da página" - Gustavo*/
+        background-color: #161a1d;
+    }
+    #page-footer { /*Cor do footer da página" - Gustavo*/
+        background-image: radial-gradient(ellipse at center,#161a1d 1%,#161a1d 100%);
+        color: #fff;
+        border-top: 2px solid #161a1d;
+        border-bottom: 3px solid #161a1d;
+    }
+
     #region-main-box,.row { /*Cor de fundo, entre as secções do site - Caio*/
         background-color: #0b090a;
     }
+
     .card { /*Cor das secções dos site - Caio*/
         background-color: #161A1D;
     }
@@ -45,10 +56,48 @@
     }
     .list-group-item { /*Cor de fundo de elementos de uma lista - Caio*/
         background-color: #0B090A!important;
+        border: 1px solid rgb(22 26 29); /*Cor da borda dos elementos de uma lista" - Gustavo*/
+    }
+    .list-group-item-action {
+        color: #B1A7A6;
+    }
+    .list-group-item.active { /*Cor do active de um elemento em uma lista" - Gustavo*/
+        color: #D3D3D3;
+        background-color: #0B090A;
+        border-color: #161a1d;
+    }
+    .list-group-item-action:hover, .list-group-item-action:focus {
+        color: #E5383B;
     }
     .progress-bar {
         color: #B1A7A6;
         background-color: #BA181B;
+    }
+    .form-control { /*Cores da barra de pesquisa - Gustavo*/
+        color: #D3D3D3;
+        background-color: #161a1d;
+        border: 1px solid #B1A7A6;
+    }
+    .form-control:focus { /*Cores da barra de pesquisa quando ela esta focada ou pronta para receber um texto - Gustavo*/
+        color: #D3d3d3;
+        background-color: #161a1d;
+        border-color: #B1A7A6;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(22 26 29 / 2%);
+    }
+    .popover-region-container { /*Cores dos popovers dos elementos na navbar da pagina inicial - Gustavo*/
+        border: 1px solid #0b090a;
+        background-color: #161a1d;
+    }
+    .popover-region-header-container { /*Cor da borda do header do dos blocos popover na página inicial - Gustavo*/
+        border-bottom: 1px solid #0b090a;
+    }
+    .popover-region-footer-container { /*Cores do footer do dos blocos popover na página inicial - Gustavo*/
+        border-top: 1px solid #0b090a;
+        background-color: #161a1d;
+    }
+    .message-app { /*Cor do bloco popover na aba de mensagens - Gustavo*/
+        background-color: #161a1d;
     }
     /*Botões*/
     
@@ -77,6 +126,9 @@
         transition: 0.4s;
         color: #E5383B
     }
+    .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+        color: #e5383b;
+    }
     .btn-outline-secondary{ /*Cor de botões dropdown - Caio*/
         color: #B1A7A6;
         border-color: #660708;
@@ -90,5 +142,60 @@
         transition: 0.4s;
         background-color: #BA181B!important;
         color: #0B090A;
+    }
+    .btn-light { /*Cores dos botões classificados como light - Gustavo*/
+        color: #B1A7A6;
+        background-color: #161A1D;
+        border-color: #0b090a;
+    }
+    .page-item.disabled .page-link { /*Cor do botão desativado das páginas no bloco dos cursos recem acessados - Gustavo*/
+        color: #b1a7a6;
+        background-color: #161a1d;
+        border-color: #660708;
+    }
+    .page-link { /*Cor do botão ativado das páginas no bloco dos cursos recem acessados - Gustavo*/
+        color: #d3d3d3;
+        background-color: #161a1d;
+        border: 1px solid #660708;
+    }
+    .page-link:hover { /*Cor do hover do botão das páginas no bloco dos cursos recem acessados - Gustavo*/
+        color: #f5f3f4;
+        background-color: #ba181b;
+        border-color: #0b090a;
+    }
+    .page-link:focus { /*Cor do focus do botão das páginas no bloco dos cursos recem acessados - Gustavo*/
+        box-shadow: 0 0 0 0.2rem rgba(22, 26, 29, 0);
+    }
+    .dropdown-menu { /*Cor do menu dropdown dos elementos da navbar" - Gustavo*/
+        background-color: #161A1D;
+        border: 1px solid #B1A7A6;
+    }
+    .dropdown-item { /*Cor do texto dos elementos presentes no menu dropdown na navbar - Gustavo*/
+        color: #D3D3D3;
+    }
+    .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within { /*Cor das propriedades dos elementos presentes no menu dropdown na navbar - Gustavo*/
+        background-color: #e5383b;
+        color: #F5F3F4;
+    }
+    .simplesearchform .btn-submit { /*Cores do botão de pesquisa quando a barra de pesquisa esta aberta - Gustavo*/
+        background-color: #0b090a;
+        border-color: #B1A7A6;
+        color: #B1A7A6;
+    }
+    .simplesearchform .btn-submit:hover { /*Cores do hover do botão de pesquisa quando a barra de pesquisa esta aberta - Gustavo*/
+        background-color: #E5383B;
+        border-color: #B1A7A6;
+        color: #B1A7A6;
+    }
+    .simplesearchform .btn-close:hover, .simplesearchform .btn-clear:hover { /*Cor do hover da borda do botão close da barra de pesquisa - Gustavo*/
+        border-color: #B1A7A6;
+    }
+    a.mail-navbar-menu-item { /*Cores dos elementos presentes no popover da aba "Mail" - Gustavo*/
+        border-bottom: 1px solid #0b090a;
+        color: #D3D3D3;
+    }
+    a.mail-navbar-menu-item:focus, a.mail-navbar-menu-item:hover { /*Cores do hover dos elementos presentes no popover da aba "Mail" - Gustavo*/
+        color: #D3D3D3;
+        background-color: #E5383B;
     }
 }

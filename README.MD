@@ -10,7 +10,7 @@ Após instalada, siga os passos a seguir:
 
 <h4>1 - Clique no ícone no canto superior esquerdo, um "S"</h4>
 <h4>2 - Clique em "Write Style for" enquanto na aba do moodle</h4>
-<h4>3 - Baixe e/ou copie o conteúdo do arquivo .css moodle_dark</h4>
+<h4>3 - Copie o conteúdo do arquivo .css moodle_dark</h4>
 <h4>4 - Cole no editor de texto que foi aberto após clicar no "Write Style for"</h4>
 <h4>5 - Salve as alterações</h4>
 

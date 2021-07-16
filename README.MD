@@ -16,6 +16,9 @@ Após instalada, siga os passos a seguir:
 
 Com isso, a instalação foi concluída.
 
+<h2>ATENÇÃO!!! Dark-red está incompleto!</h2>
+Devido a limitações de tempo, o modo dark-red ainda não está completo e consta com muitos bugs. Esteja ciente que muitas páginas não vão estar com o padrão correto de cores.
+
 <h3>Moodle dark-red - Como instalar</h3>
 
 Basta seguir os mesmos passos descritos acima, o código está localizado em uma branch chamada "red-dark". Para acessar a branch, basta clicar no botão com um "garfo" escrito main, e depois clicar em "red-dark".

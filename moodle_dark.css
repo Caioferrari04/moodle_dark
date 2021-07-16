@@ -12,32 +12,51 @@
     }
     /*Elementos globais - CUIDADO!! Alterar esses irá alterar todos os outros!*/
     a {
-        color: #E5383B
+        color: #E5383B!important;
     }
     a:hover{
         transition: 0.2s;
-        color: #B1A7A6
+        color: #B1A7A6!important;
     }
     .border {
         border-color: #660708!important; 
     }
-    
-    /*Elementos de fundo*/
+    .form-control { /*Cores da barra de pesquisa - Gustavo*/ /* Adendo: Também é a cor de qualquer input de texto, movendo para global - Caio*/
+        color: #D3D3D3;
+        background-color: #161a1d!important;
+        border: 0.2vh solid #B1A7A6;
+    }
+    .form-control:focus { /*Cores da barra de pesquisa quando ela esta focada ou pronta para receber um texto - Gustavo*/
+        color: #D3d3d3;
+        background-color: #161a1d;
+        border-color: #B1A7A6;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(22 26 29 / 2%);
+    }
+    .generaltable { /* Configurações globais de TODAS as tabelas do site - Caio */
+        color: #D3d3d3;
+    }
+    .btn { /* Cor padrão de botões - Caio */
+        color: #B1A7A6;
+    }
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Elementos de fundo <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
     [data-region="drawer"] { /*Cor do background da lista presente no drawer da página" - Gustavo*/
         background-color: #161a1d;
     }
     #page-footer { /*Cor do footer da página" - Gustavo*/
         background-image: radial-gradient(ellipse at center,#161a1d 1%,#161a1d 100%);
         color: #fff;
-        border-top: 2px solid #161a1d;
-        border-bottom: 3px solid #161a1d;
+        border-top: solid #161a1d;
+        border-bottom: solid #161a1d;
     }
 
     #region-main-box,.row { /*Cor de fundo, entre as secções do site - Caio*/
         background-color: #0b090a;
     }
 
-    .card { /*Cor das secções dos site - Caio*/
+    .card,#region-main { /*Cor das secções dos site - Caio*/
         background-color: #161A1D;
     }
     
@@ -45,8 +64,52 @@
         background-image: radial-gradient(ellipse at center,#17882c00 1%,#00510f00 100%);
         background-color: #161A1D!important;
     }
+    .generaltable tbody tr:nth-of-type(odd) { /* Cor de elemento impar da tabela - Caio*/
+        background-color: #0B090A;
+    }
+    .path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded { /*Cor de "Avaliado" em uma submissão de atividade - Caio*/
+        background-color: #660708!important;
+        color: #D3D3D3;
+    }
+    .path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted,.path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission{ /*Outras cores de entrega de atividade - Caio*/
+        background-color: #660708;
+        color: #D3D3D3;
+    }
+    .path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded { /*Cor do elemento da tabela onde diz "atividade não avaliada" - Caio*/
+        background-color: #161A1D;
+        color: #D3D3D3;
+    }
+    /*~v~ Página de revisão de atividades ~v~*/
     
-    /*Itens da página principal*/
+    table.quizreviewsummary td.cell { /*Conteúdo do elemento da tabela de notas - Caio*/
+        background: #660708;
+    }
+    table.quizreviewsummary th.cell { /*Conteúdo da coluna da tabela de notas - Caio*/
+        background: #0B090A;
+    }
+    .generaltable tbody tr:hover { /*Cor hover da tabela de notas - Caio*/
+        color: #B1A7A6;
+    }
+    .que .formulation { /*Cor de fundo da atividade - Caio*/
+        background: #0B090A;
+        color: #D3D3D3;
+    }
+    .que .outcome, .que .comment { /*Comentário do professor - Caio*/
+        background: #660708;
+        color: #D3D3D3;
+    }
+    .que.essay .qtype_essay_response.readonly { /*Texto escrito pelo aluno - Caio*/
+        background-color: #161A1D;
+        color: #D3D3D3;
+    }
+    .que .info { /*Cor do quadrado de número da questão e quantidade de nota p/questão - Caio*/
+        background-color: #660708;
+        color: #D3D3D3;
+        border-color: #660708;
+    }
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /*------------------------------------------------- Itens da página principal -------------------------------------------------*/
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
     .categoryname.text-truncate{ /*Cor de subtitulo do cartão - Caio*/
         color: #B1A7A6!important;
     }
@@ -56,7 +119,11 @@
     }
     .list-group-item { /*Cor de fundo de elementos de uma lista - Caio*/
         background-color: #0B090A!important;
-        border: 1px solid rgb(22 26 29); /*Cor da borda dos elementos de uma lista" - Gustavo*/
+        border: solid rgb(22 26 29); /*Cor da borda dos elementos de uma lista" - Gustavo*/
+    }
+    .alert-danger { /*Cor de alerta ~ Geralmente usado para avisar sobre manuntenção - Caio*/
+        background-color: #660708;
+        color: #D3D3D3;
     }
     .list-group-item-action {
         color: #B1A7A6;
@@ -73,33 +140,62 @@
         color: #B1A7A6;
         background-color: #BA181B;
     }
-    .form-control { /*Cores da barra de pesquisa - Gustavo*/
-        color: #D3D3D3;
-        background-color: #161a1d;
-        border: 1px solid #B1A7A6;
-    }
-    .form-control:focus { /*Cores da barra de pesquisa quando ela esta focada ou pronta para receber um texto - Gustavo*/
-        color: #D3d3d3;
-        background-color: #161a1d;
-        border-color: #B1A7A6;
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem rgb(22 26 29 / 2%);
-    }
+    
     .popover-region-container { /*Cores dos popovers dos elementos na navbar da pagina inicial - Gustavo*/
-        border: 1px solid #0b090a;
+        border: solid #0b090a;
         background-color: #161a1d;
     }
     .popover-region-header-container { /*Cor da borda do header do dos blocos popover na página inicial - Gustavo*/
-        border-bottom: 1px solid #0b090a;
+        border-bottom: solid #0b090a;
     }
     .popover-region-footer-container { /*Cores do footer do dos blocos popover na página inicial - Gustavo*/
-        border-top: 1px solid #0b090a;
+        border-top: solid #0b090a;
         background-color: #161a1d;
     }
     .message-app { /*Cor do bloco popover na aba de mensagens - Gustavo*/
-        background-color: #161a1d;
+        background-color: #0b090a!important; /* Alterado, para combinar com a cor de mensagem recebida - Caio*/
     }
-    /*Botões*/
+    .message-app .message.received { /* Cor de mensagens recebidas - Caio */
+        background-color: #161A1D;
+        color: #fff;
+    }
+    .message-app .message.received .tail{ /* Cor da caudinha da mensagem - Caio */
+        border-bottom-color: #161A1D;
+    }
+    .message-app .message.received .time,.message-app .day { /*Cor do texto informando dia e hora das mensagens - Caio */
+        color: #F5F3F4;
+    }
+    .popover-header { /*Cor do header do popover de calendário - Caio */
+        background-color: #660708;
+        color:#D3D3D3;
+    }
+    .popover-body { /*Cor do corpo do popover de calendário - Caio */
+        background-color: #161A1D;
+        color: #D3D3D3;
+    }
+    
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /*------------------------------------------------- Botões -------------------------------------------------*/
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    
+    .alert-info{ /*Cor de... alert info? Parece um título só que com destaque, pode ser visto na sala de BPS-213 do Professor Peterson - Caio */
+        background-color: #660708!important;
+        color: #D3D3D3;
+    }
+    
+    .format-onetopic .onetopic .nav-tabs>li>a { /*Cor dos botões de navegação de curso, aka: botões de semanas, tópicos, etc. - Caio */
+        background-color: #161A1D!important;
+        border-color: #A4161A!important;
+    }
+    .format-onetopic ul.nav-tabs li a .tab_content.dimmed,.format-onetopic ul.nav-tabs li a .tab_content.dimmed .sectionname{ /*Cor dos botões desativados de navegação de curso, aka: botões de semanas, tópicos, etc. - Caio*/
+        background-color: #0B090A!important;
+        color: #B1A7A6;
+        border-color: #A4161A!important;
+    }
+    .btn-primary{ /* Cor de alguns botões, incluindo o botão "pesquisar" após ser realizada uma pesquisa - Caio */
+        background-color: #161A1D;
+        border-color: #BA181B;
+    }
     
     .btn.btn-secondary{ /* Cor de botões classificados como segundários - Caio*/
         background-color: #660708!important;
@@ -116,18 +212,18 @@
     }
     .navbar-light .navbar-nav .nav-link,.navbar-light .navbar-brand,.navbar.navbar-light .simplesearchform .btn-open, .usertext.mr-1,.usermenu>.action-menu .menubar>.action-menu-trigger>.dropdown .dropdown-toggle::after { /*Cor de botões do header - Caio*/
         transition: 0.4s;
-        color: #B1A7A6;
+        color: #B1A7A6!important;
     }
     .navbar.navbar-light .simplesearchform .btn-open:hover{ /*Cor do botão de pesquisa no modo hover - Caio*/
-        color:#BA181B;
+        color:#BA181B!important;
         background-color: #0B090A!important;
     }
     .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus,.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus { /*Cor de botões do header em modo hover - Caio*/
         transition: 0.4s;
-        color: #E5383B
+        color: #E5383B!important;
     }
     .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-        color: #e5383b;
+        color: #e5383b!important;
     }
     .btn-outline-secondary{ /*Cor de botões dropdown - Caio*/
         color: #B1A7A6;
@@ -175,7 +271,7 @@
     }
     .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within { /*Cor das propriedades dos elementos presentes no menu dropdown na navbar - Gustavo*/
         background-color: #e5383b;
-        color: #F5F3F4;
+        color: #F5F3F4!important; /*Adendo: Important, porque as cores originais ainda estavam fazendo efeito - Caio*/
     }
     .simplesearchform .btn-submit { /*Cores do botão de pesquisa quando a barra de pesquisa esta aberta - Gustavo*/
         background-color: #0b090a;
@@ -198,4 +294,48 @@
         color: #D3D3D3;
         background-color: #E5383B;
     }
+    
+     .local-fullscreen { /* Cor do botão fullscreen de curso - Caio */
+        background-color: #0B090A!important;
+    }
+    
+    .local-fullscreen:hover { /* Cor hover do botão fullscreen de curso - Caio */
+        background-color: #BA181B!important;
+        transition: 0.2s;
+    }
+    
+    .custom-select { /*Cores de seleção "dropdown" - Caio*/
+        color: #fff;
+        background-color: #BA181B;
+        border: solid #BA181B;
+    }
+    
+    /*~v~ Barra de navegação de curso ~v~*/
+    
+    .breadcrumb>li.breadcrumb-item { /* Cor dos itens - Caio */
+        background-color: #660708;
+        color: #D3D3D3!important;
+        border-color: #660708;
+    }
+    .breadcrumb>li.breadcrumb-item>a{ /* Cor dos outros itens - Caio */
+        background-color: #660708;
+        color: #D3D3D3!important;
+        border-color: #0000
+    }
+    .breadcrumb>li.breadcrumb-item::after{ /* Cor das setas - Caio */
+        border-left-color: #660708;
+    }
+    .calendar_event_course {
+        background-color: #660708;
+    }
+    
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    /*------------------------------------------------- Monstruosidade do Focus -------------------------------------------------*/
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    
+    .custom-select:focus,.aabtn.focus, .btn-link.focus, .nav-link.focus, .atto_link_button.focus, [role="button"].focus, .list-group-item-action.focus, input[type="checkbox"].focus, input[type="radio"].focus, input[type="file"].focus, input[type="image"].focus, .sr-only-focusable.focus, a.dropdown-toggle.focus, .modal-dialog[tabindex="0"].focus, .moodle-dialogue-base .closebutton.focus, button.close.focus, .form-autocomplete-selection.focus, .aabtn:focus, .btn-link:focus, .nav-link:focus, .atto_link_button:focus, [role="button"]:focus, .list-group-item-action:focus, input[type="checkbox"]:focus, input[type="radio"]:focus, input[type="file"]:focus, input[type="image"]:focus, .sr-only-focusable:focus, a.dropdown-toggle:focus, .modal-dialog[tabindex="0"]:focus, .moodle-dialogue-base .closebutton:focus, button.close:focus, .form-autocomplete-selection:focus,.btn-secondary:focus, .btn-secondary.focus { 
+        outline: 0;
+        border-color: #E5383B;
+        box-shadow: 0 0 0 0.2rem #660708c7;
+    } /*Contém todos os :focus do código, padronizando - Caio*/
 }
